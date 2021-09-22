@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <title>Consulta de CEP</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-3 ">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Sobrenome</label>
+                  <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-12">
+                  <label for="inputZip" class="form-label">Cep</label>
+                  <input type="text" class="form-control" id="inputZip" onblur="consultaCep()" placeholder="Exemplo: 99999999">
+                </div>
+                <div class="col-10">
+                  <label for="inputAddress" class="form-label">Logradouro</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Carregamento automático">
+                </div>
+                <div class="col-2">
+                  <label for="inputAddress2" class="form-label">Nº</label>
+                  <input type="text" class="form-control" id="inputAddress2">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputCity" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="inputBairro" placeholder="Carregamento automático">
+                </div>
+                <div class="col-md-5">
+                  <label for="inputCity" class="form-label">Cidade</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="Carregamento automático">
+                </div>
+                <div class="col-md-3">
+                  <label for="inputState" class="form-label">Estado</label>
+                  <input type="text" class="form-control" id="inputState" placeholder="Carregamento automático">
+                </div>
+                <div class="col-12 mt-2 text-center">
+                  <button type="button" class="btn btn-primary">Cadastrar</button> <input type="reset" class="btn btn-primary">
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
